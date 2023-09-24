@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BringMyFood</title>
+    <link rel="icon" type="image/x-icon" href="./img/home-logo-bringmyfood.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="script.js"></script>
+   
+</head>
+
+<body onload="render(); loadCart();">
+  
+    <header>
+        <div class="logo">
+            <img src="./img/home-logo-bringmyfood.png" alt="Logo-Home">
+            <span>BringMyFood</span>
+        </div>
+
+        <div class="nav-toggle">
+            <img src="./img/burger-menu.png" alt="Navigation-Toggle">
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="content-left">
+
+            <div class="home-image">
+                <img src="./img/home-image-pizza.jpg" alt="">
+            </div>
+
+            <div class="delivery-details">
+                <h2>City Pizza</h2>
+                <div class="details-icons">
+                    <img src="./img/info-icon.png" alt="">
+                    <img src="./img/love-white-icon.png" alt="">
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="stars">
+                    <img src="./img/star_9784027.png" alt="">
+                    <img src="./img/star_9784027.png" alt="">
+                    <img src="./img/star_9784027.png" alt="">
+                    <img src="./img/star_9784027.png" alt="">
+                    <img src="./img/star_9784027.png" alt="">
+                </div>
+                <span>679 Bewertungen</span>
+            </div>
+
+            <div class="delivery-description">
+                <span>Genießen Sie italienische Pizzen, leckere Pasta, saftige Burger und vieles mehr bei Ihnen zu Hause. Wir freuen uns auf
+                Ihre Bestellung und wünschen einen guten Appetit!
+                </span>
+            </div>
+
+            <div class="menu-selection">
+                <img src="./img/search-icon.png" alt="">
+                <span>Pizza</span>
+                <span>Burger</span>
+                <span>Salat</span>
+                <span>Pasta</span>
+                <span>Getränke</span>
+            </div>
+
+            <div id="mealContent"></div>
+
+            <div class="responsive-shopping-cart">
+                <button onclick="showResposiveShoppingCart()">
+                    <h2>Warenkorb</h2>
+                   <span id="responsiveTotalPrice">(0.00€)</span>
+                </button>   
+            </div>
+
+        </div>
+
+        <div class="content-right">
+            
+            <div class="close-button" id="closeButton" onclick="closeResponsiveShoppingCart()">
+               <img src="./img/cancel-icon-II.png" alt="">
+            </div>
+
+            <div class="shop-basket-header">
+                <h2>Warenkorb</h2>
+            </div>
+            
+            <div class="shopping-cart-placeholder" id="cartPlaceholder">
+                <img src="./img/shopping-venture-icon.png" alt="">
+                <h3>Fülle dein Warenborb</h3>
+                <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+            </div>
+            
+            <div id="cartContent"></div>
+
+            <div class="order-button-container">
+                <button id="orderButton" class="order-button" disabled><h2>Bestellen</h2></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="logo-footer">
+            <img src="./img/logo-home-bringmyfood.svg" alt="">
+          <span>BringMyFood</span>
+        </div>
+
+        <ul class="policy-footer">
+            <li><a href=""></a>Datenschutz</li>
+            <li><a href=""></a>Impressum</li>
+            <li><a href=""></a>Verwendung von Cookies</li>
+            <li><a href=""></a>AGB`s</li>
+        </ul>
+    </footer>
+</body>
+</html>
